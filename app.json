@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "de24cbb5-7afd-4e96-a839-4dce0b69ce2b"
+      }
+    },
+    "owner": "denisetiawan"
   }
 }
