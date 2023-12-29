@@ -7,14 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<img src="assets/crud/1.jpeg" alt="dashboard">
-<img src="assets/crud/2.jpeg" alt="dashboard">
-<img src="assets/crud/3.jpeg" alt="dashboard">
-<img src="assets/crud/4.jpeg" alt="dashboard">
-<img src="assets/crud/5.jpeg" alt="dashboard">
-<img src="assets/crud/6.jpeg" alt="dashboard">
-<img src="assets/crud/7.jpeg" alt="dashboard">
-<img src="assets/crud/8.jpeg" alt="dashboard">
+<table>
+  <tr>
+    <td><img src="assets/crud/1.jpeg" alt="dashboard" width="300" height="300"></td>
+    <td><img src="assets/crud/2.jpeg" alt="dashboard" width="300" height="300"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/crud/3.jpeg" alt="dashboard" width="300" height="300"></td>
+    <td><img src="assets/crud/4.jpeg" alt="dashboard" width="300" height="300"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/crud/5.jpeg" alt="dashboard" width="300" height="300"></td>
+    <td><img src="assets/crud/6.jpeg" alt="dashboard" width="300" height="300"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/crud/7.jpeg" alt="dashboard" width="300" height="300"></td>
+    <td><img src="assets/crud/8.jpeg" alt="dashboard" width="300" height="300"></td>
+  </tr>
+</table>
 
 ## About Laravel
 
