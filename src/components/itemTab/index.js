@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { AntDesign } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import { LAYOUT_COLOR, PRIMARY_COLOR } from "../color/Color";
 
 const TabItems = ({
   index,
@@ -14,23 +15,30 @@ const TabItems = ({
   const Logo = () => {
     if (label === "Home") {
       return isFocused ? (
-        <Ionicons name="home" size={26} color="#6F6CD9" />
+        <Ionicons name="home" size={22} color={`${PRIMARY_COLOR}`} />
       ) : (
-        <Ionicons name="home" size={26} color="grey" />
+        <Ionicons name="home" size={22} color="grey" />
       );
     }
     if (label === "Activity") {
       return isFocused ? (
-        <Ionicons name="ios-newspaper" size={26} color="#6F6CD9" />
+        <Ionicons name="ios-newspaper" size={22} color={`${PRIMARY_COLOR}`} />
       ) : (
-        <Ionicons name="ios-newspaper" size={26} color="grey" />
+        <Ionicons name="ios-newspaper" size={22} color="grey" />
       );
     }
     if (label === "Statistic") {
       return isFocused ? (
-        <AntDesign name="piechart" size={26} color="#6F6CD9" />
+        <AntDesign name="piechart" size={22} color={`${PRIMARY_COLOR}`} />
       ) : (
-        <AntDesign name="piechart" size={26} color="grey" />
+        <AntDesign name="piechart" size={22} color="grey" />
+      );
+    }
+    if (label === "Profile") {
+      return isFocused ? (
+        <Ionicons name="person" size={22} color={`${PRIMARY_COLOR}`} />
+      ) : (
+        <Ionicons name="person" size={22} color="grey" />
       );
     }
   };
@@ -55,27 +63,28 @@ const TabItems = ({
               borderRadius: 18,
             }}
           >
-            {/* <LinearGradient
-              colors={["#C67C4E", "#EDAB81"]}
+            <LinearGradient
+              colors={[`${PRIMARY_COLOR}`, `${PRIMARY_COLOR}`]}
               style={{
-                width: 10,
+                width: "auto",
                 height: 5,
+                marginTop: 3,
                 borderRadius: 18,
               }}
-            /> */}
+            />
           </View>
         ) : (
           <></>
         )}
-        <Text
+        {/* <Text
           style={{
-            color: isFocused ? "#6F6CD9" : "grey",
-            fontSize: 14,
+            color: isFocused ? {`${PRIMARY_COLOR}`} : "grey",
+            fontSize: 12,
             fontWeight: 500,
           }}
         >
           {label}
-        </Text>
+        </Text> */}
       </View>
     </TouchableOpacity>
   );
@@ -86,7 +95,7 @@ export default TabItems;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    backgroundColor: "#fff",
+    backgroundColor: LAYOUT_COLOR,
     paddingVertical: 14,
     paddingHorizontal: 55,
     justifyContent: "space-between",

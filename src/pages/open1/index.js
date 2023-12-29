@@ -1,8 +1,16 @@
-import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  Dimensions,
+  SafeAreaView,
+} from "react-native";
 import React from "react";
 import { Link, useNavigation } from "@react-navigation/native";
 import Onboarding from "react-native-onboarding-swiper";
 import slides from "./slides";
+import { PRIMARY_COLOR } from "../../components/color/Color";
 
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
@@ -10,7 +18,7 @@ const screenHeight = Dimensions.get("window").height;
 const Open1 = () => {
   const navigate = useNavigation();
   const handlePress = () => {
-    navigate.navigate("HomeTab");
+    navigate.navigate("Login");
   };
 
   // const handlePress = () => {
@@ -18,7 +26,7 @@ const Open1 = () => {
   // };
 
   return (
-    <View
+    <SafeAreaView
       style={{
         flex: 1,
         backgroundColor: "#fff",
@@ -30,10 +38,10 @@ const Open1 = () => {
           fontWeight: "bold",
           color: "#000",
           textAlign: "center",
-          marginTop: screenHeight * 0.001,
+          marginTop: screenHeight * 0.1,
         }}
       >
-        Financy
+        TaskTracker
       </Text>
       <Onboarding
         onSkip={() => {
@@ -49,7 +57,7 @@ const Open1 = () => {
             style={{
               fontSize: 16,
               fontWeight: "bold",
-              color: "#6F6CD9",
+              color: PRIMARY_COLOR,
               marginLeft: 20,
             }}
             {...props}
@@ -64,7 +72,7 @@ const Open1 = () => {
               fontWeight: "bold",
               color: "#fff",
               marginRight: 20,
-              backgroundColor: "#6F6CD9",
+              backgroundColor: PRIMARY_COLOR,
               paddingVertical: 10,
               paddingHorizontal: 20,
               borderRadius: 10,
@@ -81,7 +89,7 @@ const Open1 = () => {
               fontWeight: "bold",
               color: "#fff",
               marginRight: 20,
-              backgroundColor: "#6F6CD9",
+              backgroundColor: PRIMARY_COLOR,
               paddingVertical: 10,
               paddingHorizontal: 20,
               borderRadius: 10,
@@ -98,7 +106,7 @@ const Open1 = () => {
               height: 10,
               borderRadius: 5,
               marginHorizontal: 6,
-              backgroundColor: selected ? "#6F6CD9" : "#ccc",
+              backgroundColor: selected ? PRIMARY_COLOR : "#ccc",
             }}
           />
         )}
@@ -117,7 +125,7 @@ const Open1 = () => {
           subtitle: slide.description,
         }))}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 

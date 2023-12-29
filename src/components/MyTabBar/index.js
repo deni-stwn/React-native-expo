@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import TabItems from "../itemTab";
+import { LAYOUT_COLOR } from "../color/Color";
 
 function MyTabBar({ state, descriptors, navigation }) {
   return (
@@ -55,7 +56,7 @@ export default MyTabBar;
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    backgroundColor: "#fff",
+    backgroundColor: LAYOUT_COLOR,
     paddingVertical: 18,
     paddingHorizontal: 55,
     justifyContent: "space-between",
