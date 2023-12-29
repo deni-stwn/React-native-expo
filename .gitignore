@@ -7,6 +7,7 @@ node_modules/
 .expo/
 dist/
 web-build/
+firebaseConfig.js
 
 # Native
 *.orig.*
@@ -31,8 +32,6 @@ yarn-error.*
 # local env files
 .env*.local
 .env
-firebaseConfig.js
-src/pages
 
 # typescript
 *.tsbuildinfo
