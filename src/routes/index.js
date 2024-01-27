@@ -25,11 +25,11 @@ const HomeTabs = () => {
         component={Home}
         options={{ headerShown: false }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Activity"
         component={Activity}
         options={{ headerShown: false }}
-      />
+      /> */}
       <Tab.Screen
         name="Statistic"
         component={Statistic}

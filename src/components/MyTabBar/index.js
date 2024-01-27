@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     backgroundColor: LAYOUT_COLOR,
-    paddingVertical: 18,
-    paddingHorizontal: 55,
+    paddingVertical: 6,
+    paddingHorizontal: 45,
     justifyContent: "space-between",
     alignItems: "center",
   },

@@ -50,6 +50,7 @@ const HeaderShown = ({ label, showHeart, Option }) => {
         style={{
           fontSize: 18,
           color: "black",
+          fontWeight: "bold",
           paddingRight: showHeart ? "0%" : "43%",
         }}
       >

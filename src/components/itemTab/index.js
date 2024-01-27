@@ -20,13 +20,13 @@ const TabItems = ({
         <Ionicons name="home" size={22} color="grey" />
       );
     }
-    if (label === "Activity") {
-      return isFocused ? (
-        <Ionicons name="ios-newspaper" size={22} color={`${PRIMARY_COLOR}`} />
-      ) : (
-        <Ionicons name="ios-newspaper" size={22} color="grey" />
-      );
-    }
+    // if (label === "Activity") {
+    //   return isFocused ? (
+    //     <Ionicons name="ios-newspaper" size={22} color={`${PRIMARY_COLOR}`} />
+    //   ) : (
+    //     <Ionicons name="ios-newspaper" size={22} color="grey" />
+    //   );
+    // }
     if (label === "Statistic") {
       return isFocused ? (
         <AntDesign name="piechart" size={22} color={`${PRIMARY_COLOR}`} />
@@ -53,7 +53,14 @@ const TabItems = ({
       onLongPress={onLongPress}
       style={{ alignItems: "center" }}
     >
-      <View style={{ justifyContent: "center", alignItems: "center" }}>
+      <View
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          width: 60,
+          height: 50,
+        }}
+      >
         <Logo />
         {isFocused ? (
           <View
